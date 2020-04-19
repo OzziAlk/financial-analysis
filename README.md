@@ -13,6 +13,7 @@ File hierarchy:
   - learned_models / ... ML based strategies for algorithmic trading and asset analysis
     - supervised / ... supervised ML algos
     - unsupervised / ... unsupervised ML algos
+  - eval / ... performance evaluation of trading models using backtesting
 
 Naming conventions, design patterns, other guidelines:
 - files, methods named using snake_case
