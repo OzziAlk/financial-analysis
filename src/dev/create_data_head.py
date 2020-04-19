@@ -25,7 +25,7 @@ def make_head_from_full_csv(in_path, n=5000, out_path ="", other_manipulations=N
 
 
 def main():
-    in_path = "data/raw_stock_data.csv"
+    in_path = "../data/raw_stock_data.csv"
     make_head_from_full_csv(in_path)
 
 main()
