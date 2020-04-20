@@ -18,4 +18,5 @@ File hierarchy:
 Naming conventions, design patterns, other guidelines:
 - files, methods named using snake_case
 - classes named used CapitalCamelCase
+- format raw dates as YYYYMMDD (ex, jan 31, 2000 is 20000131)
 - only push head representations of datasets (<10mb) to remote repository
