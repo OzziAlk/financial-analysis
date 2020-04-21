@@ -13,7 +13,7 @@ def make_head_from_full_csv(in_path, n=5000, out_path ="", other_manipulations=N
     # if we have passed a valid function to perform other data manipulations, attempt to execute it with df_full
     if other_manipulations is not None and callable(other_manipulations):
         try:
-            other_manipulations(df_full)
+            df_full = pd.DataFrame(other_manipulations(df_full))
         except RuntimeError:
             pass
 
@@ -27,5 +27,3 @@ def make_head_from_full_csv(in_path, n=5000, out_path ="", other_manipulations=N
 def main():
     in_path = "../data/raw_stock_data.csv"
     make_head_from_full_csv(in_path)
-
-main()

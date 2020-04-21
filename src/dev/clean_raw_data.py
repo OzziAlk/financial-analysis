@@ -20,6 +20,3 @@ def main():
 
     clean = CleanRawData(path_in)
     clean.process()
-
-
-main()

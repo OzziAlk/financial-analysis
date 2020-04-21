@@ -40,8 +40,10 @@ class AddMovingAverage(IntegrateData):
         super().integrate_data()
 
 
-path_in = "../data/raw_stock_data_HEAD.csv"
-path_out = "../data/MA_stock_data_HEAD.csv"
+def main():
+    path_in = "../data/raw_stock_data_HEAD.csv"
+    path_out = "../data/MA_stock_data_HEAD.csv"
 
-addMA = AddMovingAverage(path_in, out_path=path_out, periods=[20])
-addMA.process()
+    addMA = AddMovingAverage(path_in, out_path=path_out, periods=[20])
+    addMA.process()
+
